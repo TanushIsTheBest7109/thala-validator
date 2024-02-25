@@ -73,6 +73,7 @@ label {
     left: 50%;
     transform: translateX(-50%);
     display: none;
+    padding: 50px 0px;
 }
 
 .heading {
