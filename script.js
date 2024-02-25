@@ -7,7 +7,7 @@ form.addEventListener('submit', (e) => {
 
     let thalainput = document.querySelector('#thalainput').value;
 
-    if (thalainput.length == 7) {
+    if (thalainput.length == 7 && thalainput.includes(" ") == false) {
         result.classList.add("animate");
         
         result.innerText = "Thala for a reason";
