@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'anta';
+    overflow-x: hidden;
+}
+
+@keyframes slideleft {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 70vh;
+}
+
+.container2 {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+}
+
+#thalainput {
+    border: 1.5% solid lightskyblue; /* Converted from 2px */
+    border-radius: 2.14%; /* Adjusted radius based on container size */
+    margin: 50px 0px; 
+    padding: 10px 20px;/* Converted from 10px 20px */
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 40.71%; /* Adjusted based on container size */
+    transform: translateX(-50%);
+
+}
+
+label {
+    position: absolute;
+    top: 35.71%; /* Adjusted based on container size */
+    color: rgb(0, 104, 145);
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+}
+
+.checker {
+    padding: 1.43% 2.86%; /* Converted from 10px 20px */
+    background: rgb(0, 107, 149);
+    color: white;
+    border: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55.29%; /* Adjusted based on container size */
+    cursor: pointer;
+    transition: 100ms ease;
+    margin: 50px 0px;
+}
+
+.checker:hover {
+    background: skyblue;
+}
+
+.thalaresult {
+    font-size: 3.21vw; /* Adjusted based on viewport width */
+    color: rgb(0, 75, 122);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.heading {
+    font-size: 150%; /* Adjusted based on viewport width */
+    color: rgb(0, 75, 122);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 2.86%; /* Converted from 20px */
+}
+
+.animate {
+    animation-name: slideleft;
+    animation-duration: 0.5s;
+}
